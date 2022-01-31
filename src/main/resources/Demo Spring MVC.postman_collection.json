@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "23e71bc8-5f30-4650-a84f-afce277eda50",
+		"name": "Demo Spring MVC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080 hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/plats/hello1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plats",
+						"hello1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080 hello2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/plats/hello1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plats",
+						"hello1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080 hello3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/plats/hello1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plats",
+						"hello1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080 hello4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "mon-entete-a-moi",
+						"value": "monEntete",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/plats/hello4/Arnaud/Couturier/details?age=77",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plats",
+						"hello4",
+						"Arnaud",
+						"Couturier",
+						"details"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "77"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
