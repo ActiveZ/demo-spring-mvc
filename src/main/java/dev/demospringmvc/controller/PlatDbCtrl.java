@@ -2,6 +2,7 @@ package dev.demospringmvc.controller;
 
 import dev.demospringmvc.entities.Plat;
 import dev.demospringmvc.services.PlatService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,7 +23,10 @@ public class PlatDbCtrl {
     }
 
     @PostMapping
-    public Plat creer(@RequestBody Plat plat) {
-        return this.platService.creerPlat(plat);
+    public ResponseEntity<?> creer(@RequestBody Plat plat) {
+        return ResponseEntity.status(201)
+                .header("en-tete1","mon en-tete")
+                .body(this.platService.creerPlat(plat));
+//        return this.platService.creerPlat(plat);
     }
 }
